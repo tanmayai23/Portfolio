@@ -53,28 +53,31 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* Mid mono caption */}
-        <div className="flex flex-col items-center gap-3 px-6">
-          <span className="mono-sm tracking-widestest text-paper/90 text-center">
-            {profile.role}
-          </span>
-          <span className="kicker text-ash text-center">
-            {profile.tagline} · {profile.location} · {profile.est}
-          </span>
-          <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
-            <a
-              href={profile.resume}
-              download
-              className="inline-flex items-center gap-2 border border-paper px-5 py-2 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors"
-            >
-              DOWNLOAD RESUME ↓
-            </a>
-            <a
-              href="#works"
-              className="inline-flex items-center gap-2 border border-wire px-5 py-2 mono-sm tracking-widest text-paper hover:border-paper transition-colors"
-            >
-              SEE WORK ↓
-            </a>
+        {/* Mid mono caption — framed scrim panel for legibility over the portrait.
+            Scrim color = page bg (var(--ink)), so it follows the theme automatically. */}
+        <div className="flex justify-center px-6">
+          <div className="relative bg-ink/65 backdrop-blur-[3px] hairline-top hairline-bottom px-6 sm:px-10 py-5 sm:py-6 flex flex-col items-center gap-3 max-w-[min(94vw,720px)]">
+            <span className="mono-sm tracking-widestest text-paper text-center">
+              {profile.role}
+            </span>
+            <span className="kicker text-ash text-center">
+              {profile.tagline} · {profile.location} · {profile.est}
+            </span>
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
+              <a
+                href={profile.resume}
+                download
+                className="inline-flex items-center gap-2 border border-paper px-5 py-2 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors"
+              >
+                DOWNLOAD RESUME ↓
+              </a>
+              <a
+                href="#works"
+                className="inline-flex items-center gap-2 border border-paper/50 px-5 py-2 mono-sm tracking-widest text-paper hover:border-paper transition-colors"
+              >
+                SEE WORK ↓
+              </a>
+            </div>
           </div>
         </div>
 
