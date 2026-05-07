@@ -87,6 +87,9 @@ const Contact = () => {
               <a className="kicker hover:text-paper text-ash transition-colors" href={profile.socials.email}>
                 → {profile.socials.email.replace("mailto:", "")}
               </a>
+              <a className="kicker hover:text-paper text-ash transition-colors" href={profile.socials.phone}>
+                → CALL / {profile.phone}
+              </a>
               <a className="kicker hover:text-paper text-ash transition-colors" href={profile.socials.linkedin} target="_blank" rel="noreferrer">
                 → LINKEDIN / TANMAY-KALA
               </a>

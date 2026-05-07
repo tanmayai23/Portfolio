@@ -17,6 +17,7 @@ export const profile = {
     linkedin:  "https://www.linkedin.com/in/tanmay-kala",
     github:    "https://github.com/tanmayai23",
     email:     "mailto:tanmaykala171206@gmail.com",
+    phone:     "tel:+919530173355",
     instagram: "https://instagram.com/tanmayekaala__",
     youtube:   "https://youtube.com/@techtalks-14",
     resume:    "/resume.pdf",
