@@ -53,27 +53,35 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* Mid mono caption — framed scrim panel for legibility over the portrait.
-            Scrim color = page bg (var(--ink)), so it follows the theme automatically. */}
+        {/* Mid mono caption — solid editorial caption card for crisp legibility
+            over the portrait. Scrim color = page bg (var(--ink)), so it follows
+            the theme automatically. 88% opacity reads as 'intentional card', not
+            'soft overlay'. */}
         <div className="flex justify-center px-6">
-          <div className="relative bg-ink/65 backdrop-blur-[3px] hairline-top hairline-bottom px-6 sm:px-10 py-5 sm:py-6 flex flex-col items-center gap-3 max-w-[min(94vw,720px)]">
-            <span className="mono-sm tracking-widestest text-paper text-center">
+          <div className="relative bg-ink/[0.88] backdrop-blur-md hairline-top hairline-bottom px-7 sm:px-12 py-6 sm:py-7 flex flex-col items-center gap-3.5 max-w-[min(94vw,720px)] shadow-[0_28px_70px_-32px_rgba(0,0,0,0.65)]">
+            {/* Tiny corner ticks — editorial registration marks */}
+            <span aria-hidden="true" className="absolute top-2 left-3 text-paper/40 mono-sm text-[0.6rem]">·</span>
+            <span aria-hidden="true" className="absolute top-2 right-3 text-paper/40 mono-sm text-[0.6rem]">·</span>
+            <span aria-hidden="true" className="absolute bottom-2 left-3 text-paper/40 mono-sm text-[0.6rem]">·</span>
+            <span aria-hidden="true" className="absolute bottom-2 right-3 text-paper/40 mono-sm text-[0.6rem]">·</span>
+
+            <span className="font-mono text-[0.82rem] sm:text-[0.92rem] font-medium uppercase tracking-[0.32em] text-paper text-center leading-snug">
               {profile.role}
             </span>
-            <span className="kicker text-ash text-center">
+            <span className="font-mono text-[0.7rem] sm:text-[0.74rem] uppercase tracking-[0.22em] text-bone text-center leading-snug">
               {profile.tagline} · {profile.location} · {profile.est}
             </span>
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-3">
               <a
                 href={profile.resume}
                 download
-                className="inline-flex items-center gap-2 border border-paper px-5 py-2 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors"
+                className="inline-flex items-center gap-2 border border-paper bg-paper text-ink px-6 py-2.5 mono-sm tracking-widest hover:bg-transparent hover:text-paper transition-colors"
               >
                 DOWNLOAD RESUME ↓
               </a>
               <a
                 href="#works"
-                className="inline-flex items-center gap-2 border border-paper/50 px-5 py-2 mono-sm tracking-widest text-paper hover:border-paper transition-colors"
+                className="inline-flex items-center gap-2 border border-paper px-6 py-2.5 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors"
               >
                 SEE WORK ↓
               </a>
