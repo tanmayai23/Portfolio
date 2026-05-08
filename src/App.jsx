@@ -43,9 +43,17 @@ const App = () => {
       <main>
         <Hero />
 
-        {/* Top status marquee — sets the rhythm before the bio */}
-        <div className="bg-ink hairline-top hairline-bottom py-3 text-paper">
-          <Marquee items={TOP_MARQUEE} speed="slow" />
+        {/* Top status marquee — rotated tape, color-inverted from the page.
+            overflow-hidden parent clips the rotated ends off-screen for the
+            'thrown on the page' editorial poster feel. */}
+        <div className="relative overflow-hidden py-10 sm:py-14">
+          <div className="-rotate-[2deg] origin-center w-[112%] -ml-[6%] bg-paper text-ink py-4 sm:py-5 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.35)]">
+            <Marquee
+              items={TOP_MARQUEE}
+              speed="slow"
+              itemClassName="font-display uppercase tracking-tight text-[clamp(1.6rem,3.4vw,3rem)] leading-none"
+            />
+          </div>
         </div>
 
         <About />
@@ -55,9 +63,16 @@ const App = () => {
         <Works />
         <Certifications />
 
-        {/* Reverse marquee for variety */}
-        <div className="bg-ink hairline-top hairline-bottom py-3 text-paper">
-          <Marquee items={TOP_MARQUEE} speed="normal" reverse />
+        {/* Reverse-direction tape, tilted the other way — natural visual rhyme */}
+        <div className="relative overflow-hidden py-10 sm:py-14">
+          <div className="rotate-[2deg] origin-center w-[112%] -ml-[6%] bg-paper text-ink py-4 sm:py-5 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.35)]">
+            <Marquee
+              items={TOP_MARQUEE}
+              speed="normal"
+              reverse
+              itemClassName="font-display uppercase tracking-tight text-[clamp(1.6rem,3.4vw,3rem)] leading-none"
+            />
+          </div>
         </div>
 
         <Manifesto />

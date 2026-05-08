@@ -36,9 +36,15 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-ink text-paper hairline-top overflow-hidden">
-      {/* Marquee top band */}
-      <div className="hairline-bottom py-4">
-        <Marquee items={FOOTER_MARQUEE} speed="slow" />
+      {/* Marquee top band — rotated inverted tape, matches the body marquees */}
+      <div className="relative overflow-hidden py-10 sm:py-12">
+        <div className="-rotate-[2deg] origin-center w-[112%] -ml-[6%] bg-paper text-ink py-4 sm:py-5 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.35)]">
+          <Marquee
+            items={FOOTER_MARQUEE}
+            speed="slow"
+            itemClassName="font-display uppercase tracking-tight text-[clamp(1.6rem,3.4vw,3rem)] leading-none"
+          />
+        </div>
       </div>
 
       {/* Editorial CTA strip */}
