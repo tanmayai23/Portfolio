@@ -41,7 +41,7 @@ const Hero = () => {
       {/* Title block */}
       <motion.div
         style={{ y: titleY }}
-        className="relative z-10 flex flex-col h-screen min-h-[680px] justify-between pt-[80px] sm:pt-[96px] pb-12 px-2 sm:px-6"
+        className="relative z-10 flex flex-col h-screen min-h-[600px] sm:min-h-[680px] justify-between pt-[80px] sm:pt-[96px] pb-12 px-2 sm:px-6"
       >
         <div className="flex justify-center">
           <h1
@@ -71,17 +71,17 @@ const Hero = () => {
             <span className="font-mono text-[0.7rem] sm:text-[0.74rem] uppercase tracking-[0.22em] text-bone text-center leading-snug">
               {profile.tagline} · {profile.location} · {profile.est}
             </span>
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center justify-center gap-3 mt-3 w-full sm:w-auto">
               <a
                 href={profile.resume}
                 download
-                className="inline-flex items-center gap-2 border border-paper bg-paper text-ink px-6 py-2.5 mono-sm tracking-widest hover:bg-transparent hover:text-paper transition-colors"
+                className="inline-flex items-center justify-center gap-2 border border-paper bg-paper text-ink px-6 py-2.5 mono-sm tracking-widest hover:bg-transparent hover:text-paper transition-colors w-full sm:w-auto"
               >
                 DOWNLOAD RESUME ↓
               </a>
               <a
                 href="#works"
-                className="inline-flex items-center gap-2 border border-paper px-6 py-2.5 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors"
+                className="inline-flex items-center justify-center gap-2 border border-paper px-6 py-2.5 mono-sm tracking-widest text-paper hover:bg-paper hover:text-ink transition-colors w-full sm:w-auto"
               >
                 SEE WORK ↓
               </a>

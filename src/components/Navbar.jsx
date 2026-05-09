@@ -98,7 +98,7 @@ const Navbar = () => {
         <div className="md:hidden ml-auto flex items-center gap-3">
           <ThemeToggle theme={theme} onToggle={toggleTheme} />
           <button
-            className="kicker text-paper"
+            className="kicker text-paper min-h-[44px] min-w-[44px] inline-flex items-center justify-center px-3"
             aria-expanded={open}
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}

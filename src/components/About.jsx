@@ -11,8 +11,9 @@ const About = () => (
     aria-labelledby="about-title"
     className={`anchor-pad relative bg-ink text-paper ${styles.paddingY} hairline-top`}
   >
-    {/* Ribbon */}
-    <div className="relative flex justify-center mb-16 sm:mb-20 text-paper">
+    {/* Ribbon — wrapped in overflow-hidden + max-w-full so the SVG never causes
+        horizontal scroll on phones narrower than its 420px diameter. */}
+    <div className="relative flex justify-center mb-16 sm:mb-20 text-paper max-w-full overflow-hidden">
       <CurvedText text={ribbonText} size={420} />
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
         <span className="display-md text-paper">{profile.monogram}</span>

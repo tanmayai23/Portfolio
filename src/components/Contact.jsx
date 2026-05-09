@@ -94,7 +94,7 @@ const Contact = () => {
 
           {/* Pill row — every channel that's wired up. Mirrors the reference's
               "Mac · Windows · iPhone · Android" pill cluster, in monochrome. */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-10 max-w-2xl">
+          <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 mb-10 max-w-2xl">
             {channels.map((c) => (
               <span
                 key={c.label}
@@ -170,7 +170,7 @@ const Contact = () => {
               href={c.href}
               target={c.external ? "_blank" : undefined}
               rel={c.external ? "noreferrer" : undefined}
-              className="kicker bg-paper text-ink rounded-full px-4 py-2 hover:bg-ink hover:text-paper border border-paper transition-colors"
+              className="kicker bg-paper text-ink rounded-full px-5 py-3 min-h-[44px] inline-flex items-center hover:bg-ink hover:text-paper border border-paper transition-colors"
             >
               {c.label} ↗
             </a>

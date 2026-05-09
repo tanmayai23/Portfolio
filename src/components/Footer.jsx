@@ -105,8 +105,10 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* Massive monogram band — like the reference's giant city word */}
-      <div className="relative hairline-top">
+      {/* Massive monogram band — like the reference's giant city word.
+          overflow-hidden guards against horizontal scroll at narrow widths
+          where Anton's metrics push the centered nowrap text past viewport. */}
+      <div className="relative hairline-top overflow-hidden">
         <div
           aria-hidden="true"
           className="leading-none text-paper select-none whitespace-nowrap text-center px-2 py-6 sm:py-10"
@@ -122,7 +124,7 @@ const Footer = () => {
 
       {/* Three-column link grid */}
       <div className="hairline-top px-6 sm:px-12 lg:px-20 py-12">
-        <div className="mx-auto max-w-[1500px] grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-10">
+        <div className="mx-auto max-w-[1500px] grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-6 md:gap-x-10">
           <div>
             <h4 className="kicker text-ash mb-5">— REACH OUT</h4>
             <ul className="flex flex-col gap-2.5">

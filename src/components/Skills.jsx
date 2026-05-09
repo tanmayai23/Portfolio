@@ -33,7 +33,7 @@ const Skills = () => (
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: (gi * 6 + i) * 0.03, duration: 0.45 }}
-                  className="group flex items-baseline justify-between border-b border-wire py-3 transition-colors hover:bg-paper hover:text-ink"
+                  className="group flex items-baseline justify-between gap-3 flex-wrap sm:flex-nowrap border-b border-wire py-3 transition-colors hover:bg-paper hover:text-ink"
                 >
                   <span className="display-md text-paper group-hover:text-ink leading-none">{item.name}</span>
                   <span className="mono-sm text-ash group-hover:text-ink/70">{item.note}</span>
