@@ -7,19 +7,9 @@
     <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
     <meta name="color-scheme" content="light dark" />
 
-    <!-- Pre-React theme init: resolves stored preference or system pref before paint to prevent FOUC -->
-    <script>
-      (function () {
-        try {
-          var stored = localStorage.getItem('theme');
-          var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-          var theme = stored === 'light' || stored === 'dark' ? stored : (prefersLight ? 'light' : 'dark');
-          document.documentElement.setAttribute('data-theme', theme);
-        } catch (e) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        }
-      })();
-    </script>
+    <!-- Pre-React theme init: resolves stored preference or system pref before paint to prevent FOUC.
+         External (not inline) so CSP can stay strict — no script-src 'unsafe-inline' needed. -->
+    <script src="/theme-init.js"></script>
     <meta name="author" content="Tanmay Kala" />
     <meta name="description" content="Tanmay Kala — AI Architect & Full-Stack Innovator. Founder of Naxatra AI. Building voice agents, transcription pipelines, and LLM-powered apps from India." />
     <meta name="keywords" content="Tanmay Kala, AI Engineer, Naxatra AI, Whisper, Gemini, Voice Assistant, RAG, LLM, Portfolio, India, VIT Bhopal" />
