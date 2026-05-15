@@ -110,7 +110,7 @@ export const experiences = [
     location: "INDIA · REMOTE",
     points: [
       "Founded Naxatra AI to ship intelligent products targeting civic and student problems.",
-      "Delivered the Hey Dude AI voice assistant from zero to production-ready in a 15-day sprint.",
+      "Delivered six public-facing AI/web products across speech, travel, civic-tech, collaboration, and student productivity.",
       "Architected SwachhVan — placed Top 25 of 400+ teams nationally at Hack For Green Bharat.",
       "Published 21 build-in-public posts on LinkedIn (avg. 538+ impressions); audience grew to 439 followers.",
     ],
@@ -150,17 +150,21 @@ export const experiences = [
   },
 ];
 
-// 5 real shipped products from the resume, in reverse-chronological order.
+// Curated project lineup for portfolio showcase order.
 export const projects = [
   {
     index: "01",
-    name: "HEY DUDE",
-    sub: "AI VOICE ASSISTANT",
-    year: "NOV 2025",
+    name: "WHISPER AI TRANSCRIBE",
+    sub: "AUDIO-TO-TEXT TOOL",
+    year: "JAN 2025",
     description:
-      "Production AI voice assistant delivered in a 15-day sprint. Unified voice recognition, biometric face authentication, and full system control inside one Python pipeline. Replaced a rule-based engine with the Gemini API to lift conversational accuracy 3× across 10+ command categories. OpenCV face embeddings on SQLite enable passwordless login in under 2 seconds. WhatsApp automation across 50+ contacts via voice cut task completion 80% with sub-500 ms hotword latency.",
-    stack: ["python", "gemini", "opencv", "speech-rec", "sqlite", "snowboy"],
-    link: "https://github.com/tanmayai23/Hey-Dude-Voice-Assistant",
+      "Audio transcription app built on OpenAI Whisper with 95%+ accuracy across multiple formats. Includes auto language detection, translation support, and export outputs for practical content workflows.",
+    stack: ["python", "whisper", "gradio", "nlp", "translation"],
+    liveLink: "https://huggingface.co/spaces/TANMAY-555/Whisper_AI",
+    repoLink: "https://github.com/tanmayai23/Whisper_AI_Transcription",
+    image:
+      "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/TANMAY-555/Whisper_AI.png",
+    imageAlt: "Whisper AI Transcribe interface preview",
   },
   {
     index: "02",
@@ -168,19 +172,27 @@ export const projects = [
     sub: "NLP GEOLOCATION DISCOVERY",
     year: "OCT 2025",
     description:
-      "NLP-powered geolocation engine that surfaces hidden points of interest within a 10 km radius and auto-categorizes them into three priority states in real time. Combines the Gemini API with SerpAPI to lift recommendation relevance 40% over baseline search across three POI categories. Sole AI engineer in a six-member team; delivered the full project inside a four-week academic deadline.",
+      "NLP-powered geolocation assistant that surfaces nearby points of interest and organizes recommendations in real time. Combines Gemini + web signals to improve relevance and planning quality for trips.",
     stack: ["python", "gemini", "serpapi", "nlp", "geolocation"],
-    link: "https://github.com/tanmayai23/AI-Travel-Assist",
+    liveLink: "https://aitravelassist.vercel.app/",
+    repoLink: "https://github.com/tanmayai23/AI-Travel-Assist",
+    image:
+      "https://image.thum.io/get/width/1400/noanimate/https://aitravelassist.vercel.app/",
+    imageAlt: "AI Travel Assist application screenshot",
   },
   {
     index: "03",
-    name: "VIBEHUB",
-    sub: "COLLEGE LIFE PLATFORM",
-    year: "JUN 2025",
+    name: "NEXUS CALCULATOR",
+    sub: "ADVANCED COMPUTATIONAL INTERFACE",
+    year: "2026",
     description:
-      "Student productivity platform consolidating six modules — courses, assignments, attendance, mood, complaints, and community. NLP-powered chatbot handles 100+ query types and removes the human-agent dependency for navigation. Smart Planner and Pomodoro Timer included. Placed at Summer of Codefest '25 hackathon among 50+ competing teams.",
-    stack: ["python", "flask", "gradio", "nlp", "chatbot"],
-    link: "https://github.com/tanmayai23/vibehub-campus-connect",
+      "Modern calculator experience focused on fast, clean interaction and advanced computation workflows. Built as a polished, high-contrast interface with practical productivity-first UX.",
+    stack: ["react", "typescript", "ui", "calculator", "vercel"],
+    liveLink: "https://nexus-calculator-b8qy.vercel.app/",
+    repoLink: "https://github.com/tanmayai23/NEXUS-CALCULATOR",
+    image:
+      "https://image.thum.io/get/width/1400/noanimate/https://nexus-calculator-b8qy.vercel.app/",
+    imageAlt: "Nexus Calculator interface screenshot",
   },
   {
     index: "04",
@@ -190,17 +202,38 @@ export const projects = [
     description:
       "Production AI urban sanitation platform — Top 25 of 400+ teams at Hack For Green Bharat. Engineered an AI demand forecasting engine that cut manual dispatch planning 60% across three city zones. Real-time GPS tracking, smart booking, and cleanliness rating, all in one full-stack TypeScript app on Vercel. Validated end-to-end with 100+ simulated bookings — zero cloud cost on the Vercel free tier.",
     stack: ["typescript", "ai-forecasting", "gps", "vercel"],
-    link: "https://github.com/tanmayai23/HACK-FOR-GREEN-BHARAT",
+    liveLink: "https://swachhvan.vercel.app/",
+    repoLink: "https://github.com/tanmayai23/HACK-FOR-GREEN-BHARAT",
+    image:
+      "https://opengraph.githubassets.com/1/tanmayai23/HACK-FOR-GREEN-BHARAT",
+    imageAlt: "SwachhVan application screenshot",
   },
   {
     index: "05",
-    name: "WHISPER AI TRANSCRIBE",
-    sub: "AUDIO-TO-TEXT TOOL",
-    year: "JAN 2025",
+    name: "YOUTUBE WATCH TOGETHER",
+    sub: "REAL-TIME SYNCED VIEWING",
+    year: "SEP 2025",
     description:
-      "Audio transcription app on OpenAI Whisper, achieving 95%+ accuracy across 5+ formats through a drag-and-drop Gradio interface. Auto language detection and translation for 50+ languages, with three output formats (TXT, SRT, JSON). Published as a public Colab-hosted app via pyngrok — zero-cost production deployment, no cloud infra required.",
-    stack: ["python", "whisper", "flask", "gradio", "pyngrok"],
-    link: "https://github.com/tanmayai23",
+      "Real-time YouTube synchronization app for shared watching sessions with low-latency playback alignment and collaborative room-based experience.",
+    stack: ["typescript", "realtime", "youtube-api", "websockets", "ui"],
+    liveLink: "https://github.com/tanmayai23/Youtube-Watch-Together",
+    repoLink: "https://github.com/tanmayai23/Youtube-Watch-Together",
+    image: "/youtube-watch-together.svg",
+    imageAlt: "YouTube Watch Together GitHub project preview",
+  },
+  {
+    index: "06",
+    name: "VIBEHUB",
+    sub: "COLLEGE LIFE PLATFORM",
+    year: "JUN 2025",
+    description:
+      "Student productivity platform consolidating modules for courses, assignments, attendance, mood, complaints, and community. Includes an NLP chatbot for faster campus navigation and support.",
+    stack: ["python", "flask", "gradio", "nlp", "chatbot"],
+    liveLink: "https://vibehub-liard.vercel.app/",
+    repoLink: "https://github.com/tanmayai23/vibehub-campus-connect",
+    image:
+      "https://opengraph.githubassets.com/1/tanmayai23/vibehub-campus-connect",
+    imageAlt: "VibeHub application screenshot",
   },
 ];
 

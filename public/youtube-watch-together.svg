@@ -1,0 +1,26 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0D10"/>
+      <stop offset="1" stop-color="#11161C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="450" y1="240" x2="1150" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171D25"/>
+      <stop offset="1" stop-color="#0F141A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="250" cy="220" r="180" fill="#FFFFFF" fill-opacity="0.03"/>
+  <circle cx="1380" cy="780" r="220" fill="#FFFFFF" fill-opacity="0.04"/>
+  <rect x="450" y="240" width="700" height="520" rx="28" fill="url(#card)" stroke="#F3F3F3" stroke-opacity="0.18"/>
+  <rect x="510" y="300" width="580" height="300" rx="20" fill="#0B0E13" stroke="#F3F3F3" stroke-opacity="0.12"/>
+  <path d="M760 390L905 450L760 510V390Z" fill="#FF2E2E"/>
+  <circle cx="1235" cy="360" r="54" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="1320" cy="420" r="38" fill="#FFFFFF" fill-opacity="0.08"/>
+  <path d="M1210 360H1260M1235 335V385" stroke="#F3F3F3" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1298 420H1342" stroke="#F3F3F3" stroke-opacity="0.7" stroke-width="6" stroke-linecap="round"/>
+  <rect x="510" y="640" width="230" height="18" rx="9" fill="#F3F3F3" fill-opacity="0.18"/>
+  <rect x="510" y="676" width="360" height="16" rx="8" fill="#F3F3F3" fill-opacity="0.12"/>
+  <rect x="510" y="708" width="190" height="16" rx="8" fill="#F3F3F3" fill-opacity="0.12"/>
+  <text x="800" y="880" fill="#F3F3F3" fill-opacity="0.95" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" letter-spacing="1.5">YOUTUBE WATCH TOGETHER</text>
+</svg>

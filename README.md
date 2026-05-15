@@ -99,7 +99,7 @@ Scroll order, top to bottom:
    ├─ STATS               INDIA word + four-tile counter row
    ├─ SKILLS              three-column stack list
    ├─ EXPERIENCE          résumé timeline
-   ├─ WORKS               six typographic SVG posters · zero screenshots
+   ├─ WORKS               six professional project image cards
    ├─ CERTIFICATIONS
    ├─ MARQUEE (reversed)
    ├─ MANIFESTO           pull quote
@@ -176,7 +176,7 @@ project_3D_developer_portfolio/
 │   │   ├── Skills.jsx
 │   │   ├── Experience.jsx
 │   │   ├── Works.jsx
-│   │   ├── ProjectPoster.jsx    # six theme-aware SVG posters
+│   │   ├── ProjectPoster.jsx    # six image-driven project hero cards
 │   │   ├── Certifications.jsx
 │   │   ├── Manifesto.jsx
 │   │   ├── Contact.jsx          # EmailJS form
