@@ -162,8 +162,7 @@ export const projects = [
     stack: ["python", "whisper", "gradio", "nlp", "translation"],
     liveLink: "https://huggingface.co/spaces/TANMAY-555/Whisper_AI",
     repoLink: "https://github.com/tanmayai23/Whisper_AI_Transcription",
-    image:
-      "https://cdn-thumbnails.huggingface.co/social-thumbnails/spaces/TANMAY-555/Whisper_AI.png",
+    image: "/projects/whisper-ai.png",
     imageAlt: "Whisper AI Transcribe interface preview",
   },
   {
@@ -176,8 +175,7 @@ export const projects = [
     stack: ["python", "gemini", "serpapi", "nlp", "geolocation"],
     liveLink: "https://aitravelassist.vercel.app/",
     repoLink: "https://github.com/tanmayai23/AI-Travel-Assist",
-    image:
-      "https://image.thum.io/get/width/1400/noanimate/https://aitravelassist.vercel.app/",
+    image: "/projects/ai-travel-assist.svg",
     imageAlt: "AI Travel Assist application screenshot",
   },
   {
@@ -190,8 +188,7 @@ export const projects = [
     stack: ["react", "typescript", "ui", "calculator", "vercel"],
     liveLink: "https://nexus-calculator-b8qy.vercel.app/",
     repoLink: "https://github.com/tanmayai23/NEXUS-CALCULATOR",
-    image:
-      "https://image.thum.io/get/width/1400/noanimate/https://nexus-calculator-b8qy.vercel.app/",
+    image: "/projects/nexus-calculator.svg",
     imageAlt: "Nexus Calculator interface screenshot",
   },
   {
@@ -204,8 +201,7 @@ export const projects = [
     stack: ["typescript", "ai-forecasting", "gps", "vercel"],
     liveLink: "https://swachhvan.vercel.app/",
     repoLink: "https://github.com/tanmayai23/HACK-FOR-GREEN-BHARAT",
-    image:
-      "https://opengraph.githubassets.com/1/tanmayai23/HACK-FOR-GREEN-BHARAT",
+    image: "/projects/swachhvan.svg",
     imageAlt: "SwachhVan application screenshot",
   },
   {
@@ -231,8 +227,7 @@ export const projects = [
     stack: ["python", "flask", "gradio", "nlp", "chatbot"],
     liveLink: "https://vibehub-liard.vercel.app/",
     repoLink: "https://github.com/tanmayai23/vibehub-campus-connect",
-    image:
-      "https://opengraph.githubassets.com/1/tanmayai23/vibehub-campus-connect",
+    image: "/projects/vibehub.png",
     imageAlt: "VibeHub application screenshot",
   },
 ];

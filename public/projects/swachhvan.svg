@@ -1,0 +1,26 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1D14"/>
+      <stop offset="1" stop-color="#14241A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="360" y1="220" x2="1240" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2E22"/>
+      <stop offset="1" stop-color="#122118"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="250" cy="220" r="170" fill="#5DF7A3" fill-opacity="0.12"/>
+  <circle cx="1330" cy="760" r="220" fill="#8AFFC4" fill-opacity="0.09"/>
+  <rect x="350" y="210" width="900" height="580" rx="30" fill="url(#card)" stroke="#DEFFE9" stroke-opacity="0.24"/>
+  <rect x="430" y="300" width="740" height="320" rx="24" fill="#0E1811" stroke="#DEFFE9" stroke-opacity="0.16"/>
+  <path d="M510 540L670 470L850 505L980 430L1080 455" stroke="#7CF8B2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="510" cy="540" r="12" fill="#53E09A"/>
+  <circle cx="670" cy="470" r="12" fill="#53E09A"/>
+  <circle cx="850" cy="505" r="12" fill="#53E09A"/>
+  <circle cx="980" cy="430" r="12" fill="#53E09A"/>
+  <circle cx="1080" cy="455" r="12" fill="#53E09A"/>
+  <rect x="430" y="655" width="290" height="18" rx="9" fill="#DEFFE9" fill-opacity="0.28"/>
+  <rect x="430" y="690" width="420" height="14" rx="7" fill="#DEFFE9" fill-opacity="0.18"/>
+  <text x="800" y="885" fill="#EEFFF4" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" letter-spacing="1.2">SWACHHVAN</text>
+</svg>

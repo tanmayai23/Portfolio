@@ -1,0 +1,24 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="120" x2="1440" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#14233A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="360" y1="220" x2="1240" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2D49"/>
+      <stop offset="1" stop-color="#0F1C30"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="210" cy="180" r="150" fill="#8AB4FF" fill-opacity="0.12"/>
+  <circle cx="1380" cy="800" r="220" fill="#7CE0FF" fill-opacity="0.1"/>
+  <rect x="350" y="210" width="900" height="580" rx="30" fill="url(#panel)" stroke="#DDEBFF" stroke-opacity="0.25"/>
+  <path d="M520 580C620 500 700 470 810 455C915 442 1020 450 1120 490" stroke="#9CD0FF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="520" cy="580" r="14" fill="#53E09A"/>
+  <circle cx="810" cy="455" r="14" fill="#53E09A"/>
+  <circle cx="1120" cy="490" r="14" fill="#53E09A"/>
+  <rect x="430" y="290" width="250" height="22" rx="11" fill="#DDEBFF" fill-opacity="0.35"/>
+  <rect x="430" y="330" width="380" height="16" rx="8" fill="#DDEBFF" fill-opacity="0.2"/>
+  <rect x="430" y="362" width="280" height="16" rx="8" fill="#DDEBFF" fill-opacity="0.2"/>
+  <text x="800" y="885" fill="#F4F8FF" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" letter-spacing="1.2">AI TRAVEL ASSIST</text>
+</svg>
